@@ -13,9 +13,9 @@ from utils.draw_boxes import draw_boxes
 def main():
     os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
-    phi = 1
+    phi = 3
     weighted_bifpn = True
-    model_path = 'efficientdet-d1.h5'
+    model_path = '/tmp/model.h5'
     image_sizes = (512, 640, 768, 896, 1024, 1280, 1408)
     image_size = image_sizes[phi]
     # coco classes
