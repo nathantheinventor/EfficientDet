@@ -19,8 +19,8 @@ def get_frozen_graph(graph_file):
 
 
 def main():
-    phi = 1
-    model_path = 'checkpoints/2019-12-03/pascal_05.pb'
+    phi = 3
+    model_path = '/tmp/model.h5'
     image_sizes = (512, 640, 768, 896, 1024, 1280, 1408)
     image_size = image_sizes[phi]
     classes = [
