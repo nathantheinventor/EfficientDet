@@ -21,7 +21,7 @@ def main():
     # coco classes
     classes = {value['id'] - 1: value['name'] for value in json.load(open('coco_90.json', 'r')).values()}
     num_classes = 90
-    score_threshold = 0.3
+    score_threshold = 0.01
     colors = [np.random.randint(0, 256, 3).tolist() for _ in range(num_classes)]
     _, model = efficientdet(phi=phi,
                             weighted_bifpn=weighted_bifpn,
